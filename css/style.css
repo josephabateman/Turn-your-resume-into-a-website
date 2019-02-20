@@ -1,0 +1,95 @@
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.main-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* personal details */
+.personal-details-container {
+	border: 2px solid black;
+  width: 300px;
+	background-color: pink;
+}
+
+.details-article {
+	border: 1px solid red;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.hobbies {
+    margin-top: auto;
+}
+
+.info {
+	display: flex;
+    flex-flow: column wrap;
+    border: 2px solid red;
+}
+
+img {
+	display: block;
+	padding: 30px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+
+#personal-details h3 {
+	text-align: center;
+}
+
+
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+#personal-details {
+	margin: 0px 20px;
+	width: 300px;
+	background-color: #86D6FC;
+	border: 2px solid black;
+}
+
+#work-details {
+	margin: 0px 20px 0px 20px;
+	width: 600px;
+}
+
+.header-highlight {
+	background-color: #03116D;
+	color: white;
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+
+}
+
+hr {
+	 border-top: 1px solid #86D6FC;
+}
+
+.company-name {
+	text-transform: uppercase;
+}
+
+/* job details */
+
+.work-details-container {
+	border: 2px solid black;
+
+}
