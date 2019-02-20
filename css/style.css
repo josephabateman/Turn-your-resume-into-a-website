@@ -5,23 +5,29 @@ body {
 .main-container {
 	display: flex;
 	flex-flow: row wrap;
+	/* For the two columns */
 }
 
 /* personal details */
+
 .personal-details-container {
 	border: 2px solid black;
   width: 300px;
 	background-color: pink;
-}
-
-.details-article {
-	border: 1px solid red;
 	display: flex;
 	flex-flow: row wrap;
+	/* for the over all container on left of page */
 }
 
-.hobbies {
-    margin-top: auto;
+.details-item {
+	border: 1px solid red;
+	/* individual containers on left of page */
+
+}
+
+#hobbies {
+	margin-top: auto;
+
 }
 
 .info {
