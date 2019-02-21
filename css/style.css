@@ -21,6 +21,8 @@ body {
 
 .details-item {
 	border: 1px solid red;
+	width: 300px;
+	text-align: center;
 	/* individual containers on left of page */
 
 }
@@ -43,12 +45,14 @@ img {
 	border-radius: 50%;
 }
 
-
-#personal-details h3 {
-	text-align: center;
+.details-header {
+	background-color: #03116D;
+	color: white;
+	text-transform: uppercase;
 }
 
-
+.details-item li {
+	text-align: left;
 }
 
 h1 {
@@ -71,12 +75,6 @@ h2 {
 #work-details {
 	margin: 0px 20px 0px 20px;
 	width: 600px;
-}
-
-.header-highlight {
-	background-color: #03116D;
-	color: white;
-	text-transform: uppercase;
 }
 
 h3 {
