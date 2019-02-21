@@ -1,37 +1,40 @@
 body {
-	font-family: Helvetica, Arial, Sans-Serif;
-}
-
-ul {
-	font-size: 10px;
-}
-
-p {
-	font-size: 10px;
+	font-family: sans-serif, verdana, arial;
+	font-size: 12px;
 }
 
 .main-container {
 	display: flex;
 	flex-flow: row wrap;
   justify-content: center;
-	height: 1043px;
+	margin-bottom: 20px;
+/* For the two columns */
+}
 
-	/* For the two columns */
+.details-item p {
+	text-align: justify;
+ 	text-justify: inter-word;
+	margin: 0px 30px
 }
 
 /* personal details */
 
 .personal-details-container {
-	border: 2px solid black;
   width: 237px;
-	background-color: pink;
+	background-color: #86D6FC;
 	display: flex;
 	flex-flow: row wrap;
 	/* for the over all container on left of page */
 }
 
+.work-container {
+	display: flex;
+	flex-flow: column wrap;
+	width: 433px;
+	padding-left: 40px;
+}
+
 .details-item {
-	border: 1px solid red;
 	text-align: center;
 	width: 350px;
 
@@ -46,20 +49,26 @@ margin-bottom: : 20px;
 
 #hobbies {
 	margin-top: auto;
+}
 
+.hobbies-icons i {
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 30px;
 }
 
 .info {
 	display: flex;
-    flex-flow: column wrap;
-    border: 2px solid red;
+  flex-flow: column wrap;
 }
 
 img {
-	display: block;
-	padding: 30px;
-	margin: auto;
 	border-radius: 50%;
+	max-height: 150px;
+	max-width: 150px;
+	margin: auto;
+
 }
 
 .details-header {
@@ -73,12 +82,12 @@ img {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: normal;
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: normal;
 }
 
@@ -86,17 +95,10 @@ h2 {
 	margin: 0px 20px;
 	width: 300px;
 	background-color: #86D6FC;
-	border: 2px solid black;
-}
-
-#work-details {
-	margin: 0px 20px 0px 20px;
-	width: 600px;
 }
 
 h3 {
 	text-transform: uppercase;
-	font-weight: normal;
 
 }
 
@@ -106,7 +108,7 @@ hr {
 
 #freela {
 	text-decoration: underline;
-	text-decoration-color: blue;
+	text-decoration-color: #86D6FC;
 	height: 30px;
 	border: 30px;
 	/* can't seem to figure out how to create
@@ -119,18 +121,45 @@ hr {
 
 /* job details */
 
-.work-container {
+.split-details {
 	display: flex;
 	flex-flow: row wrap;
-	border: 2px solid black;
-	width: 433px;
-	padding-left: 40px;
 }
 
-.work-item {
-
+.dates {
+	width: 200px;
 }
+
+.job {
+	width: 200px;
+	margin-bottom: 30px;
+}
+
+.ref {
+	width: 200px;
+}
+
+
 
 #Joseph {
-	color: blue;
+	color: #86D6FC;
+}
+
+.work-item h3 {
+	display: inline;
+}
+
+h4 {
+	display: inline;
+	text-transform: uppercase;
+}
+
+h5 {
+	margin: 7px 5px 0px 0px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#education {
+	margin-top: 50px;
 }
