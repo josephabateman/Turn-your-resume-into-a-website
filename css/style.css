@@ -15,6 +15,7 @@ body {
 	text-align: justify;
  	text-justify: inter-word;
 	margin: 0px 30px
+
 }
 
 /* personal details */
@@ -38,6 +39,8 @@ body {
 	text-align: center;
 	width: 350px;
 
+
+
 	/* individual containers on left of page */
 
 }
@@ -48,26 +51,16 @@ margin-bottom: : 20px;
 }
 
 #hobbies {
-	margin-top: auto;
-}
-
-.hobbies-icons i {
-	border: 2px solid black;
-	padding: 8px;
-	border-radius: 50%;
-	font-size: 30px;
-}
-
-.info {
-	display: flex;
-  flex-flow: column wrap;
+	margin: 400px 0px 0px 0px;;
 }
 
 img {
 	border-radius: 50%;
 	max-height: 150px;
 	max-width: 150px;
-	margin: auto;
+	margin: 30px auto;
+	text-align: center;
+	border: 3px solid grey;
 
 }
 
@@ -79,14 +72,19 @@ img {
 
 .details-item li {
 	text-align: left;
+  list-style-type: none;
+
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 2.7em;
 	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 70px;
 }
 
 h2 {
+	margin-top: -20px;
 	font-size: 1.5em;
 	font-weight: normal;
 }
@@ -99,6 +97,9 @@ h2 {
 
 h3 {
 	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 5px;
 
 }
 
@@ -107,12 +108,7 @@ hr {
 }
 
 #freela {
-	text-decoration: underline;
-	text-decoration-color: #86D6FC;
-	height: 30px;
-	border: 30px;
-	/* can't seem to figure out how to create
-	distance between text and underline */
+	border-bottom: 1.2px solid #86D6FC
 }
 
 .company-name {
@@ -127,11 +123,12 @@ hr {
 }
 
 .dates {
-	width: 200px;
+	width: 150px;
+	margin-right: 30px;
 }
 
 .job {
-	width: 200px;
+	width: 250px;
 	margin-bottom: 30px;
 }
 
@@ -141,8 +138,12 @@ hr {
 
 
 
-#Joseph {
+#joseph {
 	color: #86D6FC;
+}
+
+#bateman {
+	font-weight: lighter;
 }
 
 .work-item h3 {
@@ -162,4 +163,22 @@ h5 {
 
 #education {
 	margin-top: 50px;
+}
+
+.hobbies-icons i {
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.work-icon {
+	display: inline;
+	margin-right: 20px;
+	font-size: 20px;
+	color: #86D6FC;
+}
+
+hr {
+	margin-bottom: 30px;
 }
