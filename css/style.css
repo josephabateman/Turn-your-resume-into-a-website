@@ -1,86 +1,96 @@
 body {
 	font-family: sans-serif, verdana, arial;
 	font-size: 12px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 40px;
+	margin: auto;
+  width: 50%;
 }
-
-.main-container {
-	display: flex;
-	flex-flow: row wrap;
-  justify-content: center;
-	margin-bottom: 20px;
-/* For the two columns */
-}
-
-.details-item p {
-	text-align: justify;
- 	text-justify: inter-word;
-	margin: 0px 30px
-
-}
-
-/* personal details */
 
 .personal-details-container {
-  width: 237px;
-	background-color: #86D6FC;
 	display: flex;
-	flex-flow: row wrap;
-	/* for the over all container on left of page */
+	flex-flow: column ;
+	width: 237px;
+	text-align: center;
+	height: auto;
+	background-color: #86D6FC;
+	justify-content: space-between;
 }
 
 .work-container {
+	grid-column: 2 / span 2;
+	width: 427px;
+}
+
+.job-grid {
 	display: flex;
-	flex-flow: column wrap;
-	width: 433px;
-	padding-left: 40px;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
-.details-item {
-	text-align: center;
-	width: 350px;
-
-
-
-	/* individual containers on left of page */
-
+.work-header {
+	margin: 30px 0px;
+	width: 100%;
 }
 
-#picture {
-margin-bottom: : 20px;
-/* this doesn't work */
+.dates {
+	width: 100px;
 }
 
-#hobbies {
-	margin: 400px 0px 0px 0px;;
+.job-description {
+	width: 300px;
 }
 
-img {
-	border-radius: 50%;
-	max-height: 150px;
-	max-width: 150px;
-	margin: 30px auto;
-	text-align: center;
-	border: 3px solid grey;
-
+.references {
+	width: 48%;
 }
 
 .details-header {
-	background-color: #03116D;
+	background-color: #105A97;
+	display: block;
 	color: white;
 	text-transform: uppercase;
 }
 
-.details-item li {
-	text-align: left;
-  list-style-type: none;
-
+.ref-name {
+	text-transform: uppercase;
+	line-height: 30px;
 }
 
+ /* wrong. need to remove this and centre boxes */
+
+
+.personal-details-container p {
+	margin: 0px 15px;
+}
+
+/* personal details */
+
+img {
+	margin-top: 50px;
+	border-radius: 50%;
+	max-height: 135px;
+	border: 3px solid grey;
+}
+
+.personal-details-container li {
+	text-align: left;
+  list-style-type: none;
+}
+
+.personal-details-container p {
+	text-align: justify;
+ 	text-justify: inter-word;
+}
+
+
+/* main section begin */
 h1 {
+	margin-top: 60px;
 	font-size: 2.7em;
 	font-weight: normal;
 	text-transform: uppercase;
-	margin-top: 70px;
 }
 
 h2 {
@@ -89,55 +99,49 @@ h2 {
 	font-weight: normal;
 }
 
-#personal-details {
-	margin: 0px 20px;
-	width: 300px;
-	background-color: #86D6FC;
-}
-
 h3 {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	font-weight: normal;
-	padding: 5px;
+}
 
+hr {
+
+}
+
+h3 {
+	display: inline;
+}
+
+h4 {
+	text-transform: uppercase;
+}
+
+h5 {
+	font-weight: normal;
 }
 
 hr {
 	 border-top: 1px solid #86D6FC;
 }
 
-#freela {
-	border-bottom: 1.2px solid #86D6FC
+/* column/row measurements */
+
+/* icons */
+.hobbies-icons i {
+	border: 1.5px solid #105A97;
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 30px;
 }
 
-.company-name {
-	text-transform: uppercase;
+.work-icon {
+	margin-right: 20px;
+	font-size: 20px;
+	color: #86D6FC;
 }
 
-/* job details */
-
-.split-details {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.dates {
-	width: 150px;
-	margin-right: 30px;
-}
-
-.job {
-	width: 250px;
-	margin-bottom: 30px;
-}
-
-.ref {
-	width: 200px;
-}
-
-
-
+/* extra formatting details */
 #joseph {
 	color: #86D6FC;
 }
@@ -146,39 +150,18 @@ hr {
 	font-weight: lighter;
 }
 
-.work-item h3 {
-	display: inline;
+#freela {
+	border-bottom: 1.2px solid #86D6FC
 }
 
-h4 {
-	display: inline;
+.name {
+	margin-bottom: 50px;
+}
+
+.company-name {
 	text-transform: uppercase;
 }
 
-h5 {
-	margin: 7px 5px 0px 0px;
-	font-weight: normal;
-	font-size: 12px;
-}
+@media all and (max-width: 768px) {
 
-#education {
-	margin-top: 50px;
-}
-
-.hobbies-icons i {
-	border: 2px solid black;
-	padding: 8px;
-	border-radius: 50%;
-	font-size: 30px;
-}
-
-.work-icon {
-	display: inline;
-	margin-right: 20px;
-	font-size: 20px;
-	color: #86D6FC;
-}
-
-hr {
-	margin-bottom: 30px;
 }
