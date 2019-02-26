@@ -2,25 +2,18 @@ body {
 	font-family: sans-serif, verdana, arial;
 	font-size: 12px;
 	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 40px;
+	grid-template-columns: 237px 427px;
+	grid-gap: 35px;
 	margin: auto;
   width: 50%;
 }
 
 .personal-details-container {
 	display: flex;
-	flex-flow: column ;
-	width: 237px;
+	flex-direction: column;
 	text-align: center;
-	height: auto;
 	background-color: #86D6FC;
 	justify-content: space-between;
-}
-
-.work-container {
-	grid-column: 2 / span 2;
-	width: 427px;
 }
 
 .job-grid {
@@ -43,7 +36,12 @@ body {
 }
 
 .references {
-	width: 48%;
+	width: 40%;
+	line-height: 1.5em;
+}
+
+.ref-name {
+	text-transform: uppercase;
 }
 
 .details-header {
@@ -53,22 +51,8 @@ body {
 	text-transform: uppercase;
 }
 
-.ref-name {
-	text-transform: uppercase;
-	line-height: 30px;
-}
-
- /* wrong. need to remove this and centre boxes */
-
-
-.personal-details-container p {
-	margin: 0px 15px;
-}
-
-/* personal details */
-
 img {
-	margin-top: 50px;
+	margin-top: 20px;
 	border-radius: 50%;
 	max-height: 135px;
 	border: 3px solid grey;
@@ -82,57 +66,56 @@ img {
 .personal-details-container p {
 	text-align: justify;
  	text-justify: inter-word;
+	margin: 0px 15px;
 }
 
-
-/* main section begin */
 h1 {
-	margin-top: 60px;
-	font-size: 2.7em;
+	margin-top: 50px;
+	font-size: 32px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
 h2 {
 	margin-top: -20px;
-	font-size: 1.5em;
+	font-size: 18px;
 	font-weight: normal;
-}
-
-h3 {
-	text-transform: uppercase;
-	font-size: 1.5em;
-	font-weight: normal;
-}
-
-hr {
-
 }
 
 h3 {
 	display: inline;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: normal;
 }
 
 h4 {
 	text-transform: uppercase;
+	margin-bottom: -8px;
 }
 
 h5 {
 	font-weight: normal;
+	margin-bottom: -8px;
 }
 
 hr {
 	 border-top: 1px solid #86D6FC;
 }
 
-/* column/row measurements */
-
-/* icons */
 .hobbies-icons i {
 	border: 1.5px solid #105A97;
 	padding: 8px;
 	border-radius: 50%;
 	font-size: 30px;
+}
+
+.hobbies-icons {
+	display: flex;
+	flex-direction: row;
+	margin: 0px 25px;
+	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 .work-icon {
@@ -141,7 +124,6 @@ hr {
 	color: #86D6FC;
 }
 
-/* extra formatting details */
 #joseph {
 	color: #86D6FC;
 }
@@ -154,14 +136,62 @@ hr {
 	border-bottom: 1.2px solid #86D6FC
 }
 
-.name {
-	margin-bottom: 50px;
-}
-
-.company-name {
-	text-transform: uppercase;
-}
-
 @media all and (max-width: 768px) {
+	body {
+		display: flex;
+		flex-flow: column-reverse ;
+		width: auto;
+		padding: 5px;
+		margin: 0px 40px;
+	}
+	.hobbies  {
+	display: none;
+	}
+	#about-div {
+		display: none;
+	}
+	#contact-div {
 
+	}
+	.job-grid h5 {
+		color: #105A97;
+		}
+	.personal-details-container {
+			width: 200px;
+			background-color: unset;
+		}
+		.job-description {
+				width: 60%;
+			}
+		.dates {
+			width: 30%;
+			text-align: center;
+		}
+		img {
+			position: absolute;
+	  	right: 100px;
+	  	top: 10px
+		}
+		ul {
+			display: inline;
+		}
 }
+
+@media all and (max-width: 400px) {
+		.job-description {
+				width: 100%;
+			}
+		.dates {
+			width: 100%;
+			text-align: left;
+		}
+	}
+
+	@media all and (max-width: 570px) {
+			img {
+				width: 60px;
+				position: absolute;
+		  	right: 70px;
+		  	top: 100px;
+			}
+				}
