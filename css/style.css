@@ -4,12 +4,14 @@ body {
 	background-color: #E7E7E7;
 }
 
+/* desktop, 2 column grid */
 .all {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: center;
 }
 
+/* desktop, left flexbox */
 .personal-details-container {
 	grid-column-start: 1;
 	width: 237px;
@@ -20,6 +22,33 @@ body {
 	justify-content: space-between;
 }
 
+.personal-header {
+	background-color: #105A97;
+	display: block;
+	color: white;
+	text-transform: uppercase;
+}
+
+li {
+	margin-bottom: 10px;
+	text-align: left;
+	list-style-type: none;
+}
+
+img {
+	margin-top: 20px;
+	max-height: 135px;
+	border: 3px solid grey;
+	border-radius: 50%;
+}
+
+.personal-details-container p {
+	text-align: justify;
+ 	text-justify: inter-word;
+	margin: 0px 15px;
+}
+
+/* desktop, right flexbox */
 .job-grid {
 	width: 427px;
 	padding: 0 35px 0 35px;
@@ -30,8 +59,20 @@ body {
 	background-color: white;
 }
 
+/* name */
+#joseph {
+	color: #86D6FC;
+}
+#bateman {
+	font-weight: lighter;
+}
+#freela {
+	border-bottom: 1.2px solid #86D6FC
+}
+
+/* jobs, dates, references */
 .work-header {
-	margin: 30px 0px;
+	margin: 30px 0px -6px 0px;
 	width: 100%;
 	border-bottom: 1.2px solid #86D6FC;
 }
@@ -49,39 +90,11 @@ body {
 	line-height: 1.5em;
 }
 
-li {
-	margin-bottom: 10px;
-}
-
 .ref-name {
 	text-transform: uppercase;
 }
 
-.details-header {
-	background-color: #105A97;
-	display: block;
-	color: white;
-	text-transform: uppercase;
-}
-
-img {
-	margin-top: 20px;
-	border-radius: 50%;
-	max-height: 135px;
-	border: 3px solid grey;
-}
-
-.personal-details-container li {
-	text-align: left;
-  list-style-type: none;
-}
-
-.personal-details-container p {
-	text-align: justify;
- 	text-justify: inter-word;
-	margin: 0px 15px;
-}
-
+/* general header rules */
 h1 {
 	margin-top: 50px;
 	font-size: 32px;
@@ -102,10 +115,6 @@ h3 {
 	font-weight: normal;
 }
 
-.work-header {
-	margin-bottom: -6px;
-}
-
 h4 {
 	text-transform: uppercase;
 	margin-bottom: -8px;
@@ -120,6 +129,7 @@ hr {
 	 border-top: 1px solid #86D6FC;
 }
 
+/* icons */
 .hobbies-icons i {
 	border: 1.5px solid #105A97;
 	padding: 8px;
@@ -136,9 +146,8 @@ hr {
 .hobbies-icons {
 	display: flex;
 	flex-direction: row;
-	margin: 0px 25px;
+	margin: 0px 25px 20px 20px;
 	justify-content: space-between;
-	margin-bottom: 20px;
 }
 
 .work-icon {
@@ -147,18 +156,7 @@ hr {
 	color: #86D6FC;
 }
 
-#joseph {
-	color: #86D6FC;
-}
-
-#bateman {
-	font-weight: lighter;
-}
-
-#freela {
-	border-bottom: 1.2px solid #86D6FC
-}
-
+/* tablet media query rules */
 @media all and (max-width: 768px) {
 	.all {
 		display: flex;
@@ -199,12 +197,11 @@ hr {
 		}
 		li {
 			width: 50%;
-
 		}
 }
 
+/* phone media query rules */
 @media all and (max-width: 400px) {
-
 	.job-description {
 				width: 100%;
 			}
@@ -215,5 +212,4 @@ hr {
 		img {
 			max-width: 60px;
 		}
-			}
 }
