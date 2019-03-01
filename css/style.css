@@ -202,6 +202,8 @@ hr {
 
 		ul {
 			display: flex;
+			padding-left: 0;
+			margin-left: 10px;
 			flex-flow: row-reverse wrap;
 			justify-content: space-between;
 		}
