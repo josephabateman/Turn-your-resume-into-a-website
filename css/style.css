@@ -160,13 +160,12 @@ hr {
 /* tablet media query rules */
 @media all and (max-width: 768px) {
 	.all {
-		display: flex;
-		flex-flow: column ;
+		display: unset;
 		width: auto;
 		padding: 5px;
 	}
 	.personal-details-container {
-		width: 497px;
+		width: auto;
 		background-color: white;
 	}
 	.hobbies  {
@@ -178,6 +177,16 @@ hr {
 	.job-grid h5 {
 		color: #105A97;
 		}
+	.work-header {
+		text-align: center;
+	}
+	.work-icon {
+			margin: 0 50px 0 -50px;
+	}
+	.job-grid {
+		width: auto;
+		padding: 0 5px 0 35px;
+	}
 	.job-description {
 				width: 60%;
 			}
@@ -203,14 +212,23 @@ hr {
 
 /* phone media query rules */
 @media all and (max-width: 400px) {
+	.personal-details-container {
+		display: flex;
+		flex-flow: column-reverse wrap;
+	}
 	.job-description {
 				width: 100%;
+				text-align: center;
 			}
 		.dates {
 			width: 100%;
-			text-align: unset;
+			text-align: center;
 		}
 		img {
 			max-width: 60px;
+			float: unset;
+			position: absolute;
+			top: 120px;
+			left: 50px;
 		}
 }
