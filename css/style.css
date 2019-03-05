@@ -74,7 +74,7 @@ img {
 /* jobs, dates, references */
 .work-header {
 	margin: 30px 0px -6px 0px;
-	width: 100%;
+	width: 427px;
 	border-bottom: 1.2px solid #86D6FC;
 }
 
@@ -87,7 +87,7 @@ img {
 }
 
 .references {
-	width: 40%;
+	width: 180px;
 	line-height: 1.5em;
 }
 
@@ -178,26 +178,38 @@ hr {
 		color: #105A97;
 		}
 	.work-header {
+		margin: 30px auto 0 auto;
 		text-align: center;
-	}
-	.work-icon {
-			margin: 0 30px 0 -50px;
 	}
 	.job-grid {
 		width: auto;
 		padding: 0 5px 0 5px;
+		margin: 30px auto 0 auto;
 	}
+	.name-header {
+				width: unset;
+				text-align: center;
+				margin: 0 auto 0 auto;
+			}
 	.job-description {
-				width: 60%;
+			width: 380px;
+			text-align: center;
+			margin: 0 auto 0 auto;
 			}
 		.dates {
-			width: 30%;
+			width: 380px;
 			text-align: center;
+			margin: 0 auto 0 auto;
+		}
+		.references {
+			width: 150px;
+			text-align: center;
+			margin: 0 auto 0 auto;
 		}
 		img {
-			margin: 60px 8px 0px 30px;
+			margin: 65px 30px 0px 8px;
 			max-width: 80px;
-			float: left;
+			float: right;
 		}
 
 		ul {
@@ -208,33 +220,6 @@ hr {
 			justify-content: space-between;
 		}
 		li {
-			width: 50%;
-		}
-}
-
-/* phone media query rules */
-@media all and (max-width: 400px) {
-	.personal-details-container {
-		display: flex;
-		flex-flow: column-reverse wrap;
-	}
-	.name-header {
-				width: 100%;
-				text-align: center;
-			}
-	.job-description {
-				width: 100%;
-				text-align: center;
-			}
-		.dates {
-			width: 100%;
-			text-align: center;
-		}
-		img {
-			max-width: 60px;
-			float: unset;
-			position: absolute;
-			top: 110px;
-			left: 50px;
+			width: 200px;
 		}
 }
